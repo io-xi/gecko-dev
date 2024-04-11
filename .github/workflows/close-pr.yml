@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           sparse-checkout: "README.txt"
-          sparse-checkout-cone-mode: false
+          sparse-checkout-cone-mode: true
       - name: close
         env:
           GH_TOKEN: ${{ github.token }}
